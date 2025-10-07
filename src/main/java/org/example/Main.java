@@ -5,5 +5,9 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
+        Calculadora calc = new Calculadora(80, 1.74);
+        double resultado = calc.calcularIMC();
+
+        System.out.print("O seu IMC é: " + String.format("%.2f", resultado));
     }
 }
